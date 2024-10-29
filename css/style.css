@@ -1,0 +1,434 @@
+:root {
+  --bg: #684418;
+  --color: #c68e0c;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+}
+span {
+  color: #c68e0c;
+}
+#order {
+  box-shadow: 0px 0px 0px 2px #634117;
+}
+.navbar-menu a {
+  transition: 5s;
+}
+.navbar-menu a:hover {
+  border-bottom: 1px solid white;
+}
+/* mess
+.mess {
+  width: 100%;
+  height: 30rem;
+  background-color: var(--bg);
+  position: fixed;
+  z-index: -1;
+} */
+
+/* font */
+.menu h1,
+.location h1,
+.in-fo1 h2 {
+  font-size: 28px;
+  font-family: "PT Serif", sans-serif;
+}
+
+/* navbar menu */
+.navbar {
+  width: 100%;
+  height: 5rem;
+  background-color: var(--bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar h2 {
+  margin-left: 2rem;
+  color: white;
+  font-family: "Merriweather Sans", sans-serif;
+  border-bottom: 1px solid white;
+}
+
+.navbar-menu a,
+.navbar-icon a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin: 0px 12px;
+  font-family: "PT Serif", sans-serif;
+}
+.navbar-icon #order {
+  padding: 5px 10px;
+  background-color: #c68e0c;
+}
+.navbar-icon i {
+  font-size: 18px;
+  margin-right: 2rem;
+}
+
+/* gambar */
+.gambar {
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1545288017-c5bfc9d8820d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNhZmZlfGVufDB8fDB8fHww");
+  height: 30rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.gambar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Warna gelap, sesuaikan opacity */
+  z-index: 1;
+}
+
+.gambar h2,
+.gambar p {
+  position: relative;
+  z-index: 3;
+  color: white;
+}
+.gambar h2 {
+  font-size: 30px;
+  font-family: "Merriweather Sans", sans-serif;
+}
+.Overlay p {
+  width: 50%;
+  margin: auto;
+  font-family: "PT Serif", sans-serif;
+}
+.cof {
+  width: 100%;
+  text-align: center;
+  margin: 3rem 0px;
+}
+.cof .teks p {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  color: white;
+}
+/* info */
+.info {
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.in-pem {
+  width: 20rem;
+  height: 25rem;
+}
+/* box-shadow: 10px 0px 10px 0px black; */
+.in-pem img,
+.in-men .info1 img {
+  overvlow: hidden;
+  filter: brightness(50%);
+  transition: 0.5s;
+}
+.in-pem a {
+  text-decoration: none;
+}
+.in-pem h3 {
+  font-family: "Merriweather Sans", sans-serif;
+  text-align: center;
+  color: white;
+}
+.in-pem img:hover {
+  filter: brightness(70%);
+}
+.menu p,
+.location p {
+  color: white;
+}
+/* menu */
+.menu {
+  width: 100%;
+  height: 30rem;
+  text-align: center;
+  margin: 5rem 0px;
+  line-height: 5px;
+}
+/* in-menu */
+.in-men {
+  float: left;
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+}
+.menu .info1 {
+  display: flex;
+  color: white;
+  margin-top: 10px;
+}
+.info1 .teks1 {
+  margin: 0px 1.5rem;
+  text-align: left;
+  line-height: 1rem;
+}
+.teks1 h1 {
+  font-family: "PT Serif", sans-serif;
+}
+
+/* About Me */
+.location {
+  margin: 35rem 0px;
+  width: 100%;
+  height: 20rem;
+  text-align: center;
+  line-height: 10px;
+}
+
+.gam-ab {
+  margin: auto;
+  border-radius: 10px;
+  width: 42rem;
+  height: 25rem;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1726595453498-72c638d48d3a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHJlc3RvcmFufGVufDB8fDB8fHww");
+  filter: brightness(50%);
+}
+.lok {
+}
+.location .pem-loc {
+  padding: 0px 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* About Me */
+.abou {
+  width: 100%;
+  height: 15rem;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.abou .in-fo1,
+.abou .in-fo2 {
+  width: 90%;
+  height: 12rem;
+}
+.in-fo1 .fa-brands {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+}
+.abou .in-fo1 {
+  line-height: 1px;
+}
+.in-fo1 .pem-in1 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.pem-in1 img {
+  margin: 0px 1rem;
+}
+/* media 688 */
+@media screen and (max-width: 1055px) {
+  .info {
+    margin-bottom: 30rem;
+  }
+}
+
+/* media 1291 */
+@media screen and (max-width: 1291px) {
+  .location {
+    margin-bottom: 52rem;
+  }
+  .lok {
+    width: 100%;
+  }
+}
+
+/* Media query for 887px */
+@media screen and (max-width: 887px) {
+  .teks1 h1 {
+    font-size: 1.2rem;
+  }
+
+  .teks1 p {
+    font-size: 0.9rem;
+  }
+  .info1 img {
+    width: 80%;
+    height: 12rem;
+  }
+  .location {
+    margin-bottom: 40rem;
+  }
+}
+
+/* query navbar */
+/* media max-822 */
+@media screen and (max-width: 822px) {
+  .navbar-menu,
+  .navbar-icon a {
+    display: none;
+  }
+  .navbar {
+    margin: auto;
+  }
+  .navbar-icon .fa-magnifying-glass,
+  .navbar-icon .fa-bars {
+    font-size: 1.3rem;
+  }
+  .navbar-menu.active {
+    width: 100%;
+    height: 10rem;
+    background-color: #5a3b15;
+    display: block;
+    margin-top: 15rem;
+    z-index: 5;
+    position: absolute;
+  }
+  .navbar-menu a {
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center; /* Menyelaraskan konten secara horizontal */
+    align-items: center; /* Menyelaraskan konten secara vertikal */
+    color: white; /* Warna teks */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    transition: background-color 0.3s, transform 0.3s; /* Transisi yang halus */
+  }
+
+  .navbar-menu a:hover {
+    border-bottom: 1px solid #6d4719;
+  }
+  #gallery,
+  .galer,
+  .sope,
+  #pencari,
+  .kirim {
+    display: none;
+  }
+  .sope {
+    position: absolute;
+  }
+}
+
+/* media min-822*/
+@media screen and (min-width: 822px) {
+  .navbar-icon .fa-bars {
+    display: none;
+  }
+  #gallery {
+    display: none; /* Sembunyikan galeri secara default */
+    margin-top: 3.6rem;
+    width: 15rem;
+    height: 25rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    position: absolute;
+    right: 0; /* Menempatkan galeri di sebelah kanan */
+    top: 20px; /* Atur jarak dari atas jika diperlukan */
+    z-index: 5;
+    text-align: center;
+    font-family: "PT Serif", sans-serif;
+  }
+  .pencari {
+    width: 200px;
+    height: 100px;
+  }
+  .kirim {
+    padding: 5px 2.5rem;
+    background-color: #22c700;
+    margin: 2rem 0px;
+    border-radius: 5px;
+    border: 1px solid green;
+  }
+  .sope a {
+    margin: 0px 5px;
+  }
+}
+
+/* media 721 */
+@media screen and (max-width: 721px) {
+  .info1 img {
+    width: 70%;
+    height: 10rem;
+    margin-top: 20px;
+  }
+}
+/* media 687 */
+@media screen and (max-width: 658px) {
+  .menu {
+    margin-top: 59rem;
+  }
+  .lok iframe {
+    width: 100%;
+  }
+  .abou {
+    margin-top: 44rem;
+  }
+}
+/* (max-width: 687px) and  */
+@media screen and (max-width: 687px) {
+  .menu {
+    margin-top: 57rem;
+  }
+}
+/* query 612px */
+@media screen and (max-width: 612px) {
+  .abou {
+    margin-top: 50rem;
+  }
+}
+/* Media query for smaller mobile screens */
+@media screen and (max-width: 600px) and (min-width: 405px) {
+  .menu h1 {
+    font-size: 1.5rem;
+  }
+  .cof img {
+    width: 10%;
+  }
+
+  .teks1 h1 {
+    font-size: 1rem;
+  }
+
+  .teks1 p {
+    font-size: 0.8rem;
+  }
+  .info1 {
+    flex-wrap: wrap;
+  }
+  .info1 img {
+    width: 90%;
+    margin: auto;
+  }
+  .abou {
+    margin-top: 70rem;
+  }
+  .abou {
+    margin-top: 74rem;
+  }
+}
+@media screen (min-width: 400px) {
+  .location {
+    margin-top: 50rem;
+  }
+  .pem-in1 p {
+    width: 100%;
+  }
+}
